@@ -44,11 +44,11 @@ public class Problem1404 {
         char[] binary = s.toCharArray();
         int count = 0;
         while (binary[0] == '1'&&binary.length!=1) {
-           /*DEBUG
+
             for(char x: binary){
                 System.out.print(x);
             }
-            System.out.println();*/
+            System.out.println();
             if (binary[binary.length - 1] == '0') {
                 binary = div2(binary);
             } else {
@@ -62,7 +62,8 @@ public class Problem1404 {
     }
 
     public static void main(String[] args) {
-        System.out.println(numSteps("1111011110000011100000110001011011110010111001010111110001"));
+        //System.out.println(numSteps("1111011110000011100000110001011011110010111001010111110001"));
+        System.out.println(numSteps("110001100001"));
     }
 
     public static char[] add1(char[] binary, int index) {
